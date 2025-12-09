@@ -8,7 +8,6 @@ btn.textContent = count;
 infotext.textContent = ``;
 if (count % 10 === 0 && count != 100) {
     infotext.textContent = `WOW! Už si na to kliknul ${count} krát!`;
-
 }
 else if (count == 100) {
     infotext.textContent = `NEVERÍM! Už si na to kliknul ${count} krát!`;
