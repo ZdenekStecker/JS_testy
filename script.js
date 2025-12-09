@@ -4,18 +4,11 @@ const btn = document.getElementById("bigBtn");
 btn.addEventListener("click", () => {
 count++;
 const infotext = document.getElementById("infotext");
-const rightupimg = document.getElementById("rightupimg");
-const leftupimg = document.getElementById("leftupimg");
-const rightdownimg = document.getElementById("rightdownimg");
-const leftdownimg = document.getElementById("leftdownimg");
 btn.textContent = count;
 infotext.textContent = ``;
 if (count % 10 === 0 && count != 100) {
     infotext.textContent = `WOW! Už si na to kliknul ${count} krát!`;
-    if (count == 10) rightupimg.style.visibility = "visible";;
-    if (count == 20) leftupimg.style.visibility = "visible";;
-    if (count == 30) rightdownimg.style.visibility = "visible";;
-    if (count == 40) leftdownimg.style.visibility = "visible";;
+
 }
 else if (count == 100) {
     infotext.textContent = `NEVERÍM! Už si na to kliknul ${count} krát!`;
